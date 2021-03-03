@@ -1,0 +1,176 @@
+@keyframes move_Up_Down {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-5rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes move_Left_Right {
+    0% {
+        opacity: 0;
+        transform: translateX(-20rem)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes move_Right_Left {
+    0% {
+        opacity: 0;
+        transform: translateX(20rem)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes move_Top_Bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes movein_Top_Left {
+    0% {
+        opacity: 0;
+        transform: translateY(-20rem) translateX(-10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) translateX(0);
+    }
+}
+
+@keyframes moveout_Top_Left {
+    0% {
+        opacity: 1;
+        transform: translateY(0) translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20rem) translateX(-10rem);
+    }
+}
+
+@keyframes movein_Right {
+    0% {
+        opacity: 0;
+        transform: translateX(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes movein_Bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(20rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade_In {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes preview_package {
+    0% {
+        opacity: 0;
+        transform: translateY(-15rem);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-15rem);
+    }
+}
+
+.icon__pet__bath[data-scroll], .about__figure__1[data-scroll], .about__figure__2[data-scroll], .about__figure__3[data-scroll], .package__booking--1[data-scroll], .sign__up[data-scroll] {
+    transition: all 1s;
+}
+
+.sticky__navigation[data-scroll] {
+    transition: all 0.5s;
+}
+.sticky__navigation[data-scroll="in"] {
+    position: fixed;
+}
+
+.sticky__navigation[data-scroll="out"] {
+    position: fixed;
+    background-color: rgba($primary-white-2, 0.8);
+}
+
+.icon__pet__bath[data-scroll="in"] {
+    animation-name: move_Up_Down;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+}
+
+.about__figure__1[data-scroll="out"] {
+    opacity: 0;
+    transform: translateY(-20rem) translateX(-10rem);
+}
+
+.about__figure__2[data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(20rem);
+}
+
+.about__figure__3[data-scroll="out"] {
+    opacity: 0;
+    transform: translateY(20rem);
+}
+
+.package__booking--1[data-scroll="in"] {
+    animation-name: preview_package;
+    animation-duration: 3s;
+}
+
+.sign__up[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sign__up[data-scroll="out"] {
+    opacity: 0;
+    transform: translateY(20rem);
+}

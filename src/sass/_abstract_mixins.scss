@@ -1,0 +1,35 @@
+@mixin mix-blue-pink-text {
+    background-image: linear-gradient(to right bottom, $primary-blue-medium, $primary-red-light 70%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+@mixin mix-blue-pink-2-text {
+    background-image: linear-gradient(to right bottom, $primary-blue-light, $primary-red-light 65%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+@mixin mix-diamond-text {
+    background-image: linear-gradient($primary-blue-medium, $primary-violet-light);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+@mixin mix-blue-text {
+    background-image: linear-gradient(to right bottom, $primary-blue-dark, $primary-blue-medium);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+@mixin mix-blue-yellow-background {
+    background-image: linear-gradient(to bottom, rgba($primary-yellow-medium, 0.9) 40%, rgba($primary-blue-dark, 0.9));
+}
+
+@mixin mix-blue-violet-background {
+    background-image: linear-gradient(to bottom, rgba($primary-violet-dark, 0.9), rgba($primary-blue-dark, 0.9));
+}
+
+@mixin mix-blue-background {
+    background-image: linear-gradient(to bottom, rgba($primary-blue-dark-2, 0.9), rgba($primary-blue-dark, 0.9));
+}

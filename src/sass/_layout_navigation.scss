@@ -1,0 +1,108 @@
+.navigation {
+
+    &__container {
+        max-width: 160rem;
+        margin: 0 auto;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    &__list {
+        display: flex;
+        list-style-type: none;
+    }
+
+    &__item {
+        font-family: "Chewy";
+        font-size: 2.5rem;
+        display: inline-block;
+        transition: all 0.5s;
+        margin-left: 2.5rem;
+    }
+    
+    &__item:hover {
+        transform: translateY(-0.3rem);
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: $primary-blue-dark;
+        transition: all 0.5s;
+    }
+
+    &__link:hover {
+        color: $primary-red-light;
+    }
+}
+
+.sticky__navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    z-index: 9999; 
+}
+
+.navigation__mobile {
+    height: 5rem;
+    width: 5rem;
+    outline: none;
+    border: none;
+    background: transparent;
+    display: none;
+
+    &__menu, &__cancel {
+       width: 100%;
+       height: 100%;
+       fill: $primary-blue-dark;
+    }
+}
+
+// @media only screen and (max-width: 120rem) {
+    
+// }
+
+@media only screen and (max-width: 102.3rem) {
+    .navigation {
+
+        &__container {
+            padding: 1rem 2%;
+        }
+    }
+}
+
+@media only screen and (max-width: 40.13rem) {
+
+    .navigation {
+        
+        &__container {
+            align-items: flex-start;
+        }
+
+        &__list {
+            flex-direction: column;
+            display: none;
+        }
+
+        &__mobile {
+            outline: none;
+            border: none;
+            display: block;
+            transition: all 0.2s;
+        }
+
+        &__mobile:active {
+            transform: translateY(1rem);
+        }
+    }
+}

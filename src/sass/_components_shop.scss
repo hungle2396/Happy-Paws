@@ -1,0 +1,57 @@
+.section__shop {
+	background-color: rgba($primary-red-light, 0.1);
+}
+
+.shop {
+
+    &__toys__container {
+		width: 100%;
+		height: 30rem;
+	}
+
+	&__toys__title {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	&__toys__list {
+		height: 100%;
+	}
+
+	&__toys__item {
+		width: 33%;
+		height: 100%;
+		position: relative;
+	}
+
+	&__toys__image {
+		width: 100%;
+		height: 100%;
+		border-radius: 2rem;
+		z-index: 0;
+		
+	}
+
+	&__toys__btn__container{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__toys__btn {
+		margin-top: 5rem;
+	}
+}
+
+.glide__arrow {
+	border-radius: 2rem;
+	padding: 1.5rem 3rem;
+	background-color: white;
+	color: $primary-black;
+	transition: transform 0.5s;
+
+	&:hover {
+		transform: translateY(-1rem);
+		box-shadow: 1rem 1rem 1rem $primary-grey;
+	}
+}

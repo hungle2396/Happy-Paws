@@ -1,0 +1,33 @@
+.section__services {
+    background-color: rgba($primary-red-light, 0.1);
+}
+
+.icon {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 2rem;
+    fill: $primary-blue-dark;
+
+    &__credit {
+        font-size: 1.5rem;
+    }
+
+    &__container {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+.service {
+
+    &__paragraph {
+        padding: 0 3rem;
+    }
+}
+
+@media only screen and (max-width: 40.13rem) {
+    .mobile__margin__bottom {
+        margin-bottom: 5rem;
+    }
+}
+

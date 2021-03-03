@@ -1,0 +1,60 @@
+.header {
+    animation-name: fade_In;
+    animation-duration: 1s;
+    background-image: linear-gradient(to right bottom, rgba($primary-blue-light, 0.2), rgba($primary-red-medium, 0.2)), url(../img/pet_background_edited.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-position: top;
+    overflow: hidden;
+    position: relative;
+
+    &__content__container {
+        display: flex;
+    }
+
+    &__content {
+        flex: 0 0 28%;
+        text-align: center;
+        margin-left: 8%;
+        margin-top: 13%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__quote {
+        font-size: 6rem;
+        @include mix-blue-pink-text;
+        animation-name: move_Top_Bottom;
+        animation-duration: 2s;
+    }
+
+    &__about__btn {
+        margin-bottom: 5rem;
+        animation-name: move_Left_Right;
+        animation-duration: 2s;
+    }
+
+    &__booking__btn {
+        animation-name: move_Right_Left;
+        animation-duration: 2s;
+    }
+}
+
+@media only screen and (max-width: 40.13rem) {
+    .header {
+        background-position: 85% 50%;
+        &__content {
+            flex: 0 0 100%;
+            margin-left: 0;
+            margin-top: 38rem;
+        }
+
+        &__quote {
+            display: none;
+        }
+    }
+}

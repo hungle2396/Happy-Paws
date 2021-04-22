@@ -10,7 +10,7 @@ I deployed it to Netlify, so you can see by clicking the link here: [Happy Paws 
 1. First you have to install node.js
 2. Then, in your terminal, type in "npm install" in your editor for the terminal to download the npm_module
 3. After that, in your terminal, type in "npm run build", webpack will build a dist folder with all the necessary files to display it on the browser
-4. Finally, in your terminal, type in "npm run start", this will automatically open a localhost:3000 or localhost:8080 and render the game
+4. Finally, in your terminal, type in "npm run start", this will automatically open a localhost:3000 or localhost:8080 and render the website
 5. Hope you like it!
 
 ## What Languages Did I use to implement this application?

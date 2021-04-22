@@ -1,5 +1,5 @@
 ## What is Happy Paws?
-A dog grooming salon application that keep your pet looking and feeling fresh. A great service to keep your favorite pet clean and spicy.
+A dog grooming salon application that keep your pet looking good and feeling fresh. A great service to keep your favorite pet clean and spicy.
 
 ![Happy Paws image](https://github.com/hungle2396/Happy-Paws/blob/main/src/img/HappyPaws_pic_github.png).
 
